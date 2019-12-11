@@ -3,7 +3,15 @@ name = "zfs-dmu"
 version = "0.1.0"
 authors = ["Pierre Zemb <contact@pierrezemb.fr>"]
 edition = "2018"
+keywords = ["zfs", "dmu"]
+repository = "https://github.com/PierreZ/zfs-dmu-rs"
+homepage = "https://github.com/PierreZ/zfs-dmu-rs"
+description = """
+Bindings to zfs-dmu-sys to manipulate ZFS's DMU
+"""
+categories = ["api-bindings"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+zfs-dmu-sys = { version = "0.8.1", path = "zfs-dmu-sys" }

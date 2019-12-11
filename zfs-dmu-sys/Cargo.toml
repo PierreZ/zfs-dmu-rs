@@ -1,0 +1,19 @@
+[package]
+name = "zfs-dmu-sys"
+version = "0.8.1"
+authors = ["Pierre Zemb <contact@pierrezemb.fr>"]
+edition = "2018"
+build = "build.rs"
+license = "Apache-2.0"
+repository = "https://github.com/PierreZ/zfs-dmu-rs"
+homepage = "https://github.com/PierreZ/zfs-dmu-rs"
+description = """
+FFI Bindings to zfs's DMU
+"""
+categories = ["external-ffi-bindings"]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.51.1"
+pkg-config = "0.3.17"

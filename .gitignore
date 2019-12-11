@@ -1,3 +1,5 @@
 /target
+zfs-dmu-sys/target
 **/*.rs.bk
 Cargo.lock
+.idea
