@@ -11,6 +11,13 @@ fn main() {
 
     let out_file = env::current_dir().unwrap().join("src").join("bindings.rs");
 
+    // Skip building if bindings already exist.
+    // If you want to rebuild, delete the bindings file.
+    if out_file.exists() {
+        return;
+    }
+
+
     let lib = pkg_config::Config::new()
         .atleast_version("0.8.1")
         .probe("libzfs")
